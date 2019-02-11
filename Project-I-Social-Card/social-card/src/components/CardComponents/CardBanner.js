@@ -1,12 +1,11 @@
 import React from 'react';
 import './Card.css';
-import img from './CardImg.png'
 
 
 const CardBanner = () => {
     return (
       <div>
-        <img className="science" src={img} alt={"science"}></img>
+        <img className="science" src="https://tk-assets.lambdaschool.com/fcd75197-7d12-46ec-bc9e-4130f34822fa_reactbackground.png" alt={"science"}></img>
       </div>
     );
   };
