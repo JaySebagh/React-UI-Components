@@ -6,7 +6,7 @@ import img from './CardImg.png'
 const CardBanner = () => {
     return (
       <div>
-        <img src={img}></img>
+        <img className="science" src={img} alt={"science"}></img>
       </div>
     );
   };
