@@ -1,1 +1,28 @@
 /* All styles for your header Components live here */
+
+.hContent {
+    display: flex;
+    margin-left: 15px;
+}
+
+.textWrapper {
+    display: flex;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.name {
+    font-size: 20px;
+}
+
+.date {
+    font-size: 18px;
+    color: lightgray;
+    margin-left: 10px;
+}
+
+.header {
+    width: 550px;
+}
