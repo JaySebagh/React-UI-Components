@@ -1,1 +1,16 @@
 /* All styles for your Card Components live here */
+
+h3 {
+    color: lightgray;
+}
+
+.card {
+    border: 1px solid lightgray;
+    /* display: inline-block; */
+    width: 550px;
+    margin-left: 100px;
+}
+
+.science {
+    width: 550px;
+}
