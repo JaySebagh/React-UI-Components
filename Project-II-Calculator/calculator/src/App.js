@@ -3,7 +3,10 @@ import CalculatorDisplay from './components/DisplayComponents/CalculatorDisplay'
 import ActionButton from './components/ButtonComponents/ActionButton'
 import NumberButton from './components/ButtonComponents/NumberButton'
 import './App.css';
- 
+
+const nums = [7,8,9,4,5,6,1,2,3];
+const operators = ["/","x","-","+","="];
+
 const App = () => {
   return (
     <div className='calculator-container'>
@@ -11,23 +14,15 @@ const App = () => {
       <div className='buttons'>
         <div className="numbers">
           <ActionButton buttonStyle={'action'} text={'clear'}/>
-          <NumberButton buttonStyle={'number'} text={7} />
-          <NumberButton buttonStyle={'number'} text={8} />
-          <NumberButton buttonStyle={'number'} text={9} />
-          <NumberButton buttonStyle={'number'} text={4} />
-          <NumberButton buttonStyle={'number'} text={5} />
-          <NumberButton buttonStyle={'number'} text={6} />
-          <NumberButton buttonStyle={'number'} text={1} />
-          <NumberButton buttonStyle={'number'} text={2} />
-          <NumberButton buttonStyle={'number'} text={3} />
+          {nums.map(number => {
+            return <NumberButton buttonStyle={"number"} text={number} />
+          })}
           <ActionButton buttonStyle={'action'} text={0}/>
         </div>
         <div className="operators">
-          <NumberButton buttonStyle={'operator'} text='/' />
-          <NumberButton buttonStyle={'operator'} text='x' />
-          <NumberButton buttonStyle={'operator'} text='-' />
-          <NumberButton buttonStyle={'operator'} text='+' />
-          <NumberButton buttonStyle={'operator'} text='=' />
+          {operators.map(operator => {
+            return <NumberButton buttonStyle={"operator"} text={operator} />
+          })}
         </div>
       </div>
     </div>
